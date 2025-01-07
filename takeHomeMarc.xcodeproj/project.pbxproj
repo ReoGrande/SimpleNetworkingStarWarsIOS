@@ -13,6 +13,14 @@
 		147E45072D14805400B84C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147E45052D14805400B84C4F /* Main.storyboard */; };
 		147E45092D14805500B84C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E45082D14805500B84C4F /* Assets.xcassets */; };
 		147E450C2D14805500B84C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147E450A2D14805500B84C4F /* LaunchScreen.storyboard */; };
+		147E45142D14808000B84C4F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E45132D14808000B84C4F /* Character.swift */; };
+		147E45162D14808E00B84C4F /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E45152D14808E00B84C4F /* Characters.swift */; };
+		147E45182D1482BD00B84C4F /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E45172D1482BD00B84C4F /* CharactersView.swift */; };
+		14ECC4152D14C0CB0096FA7F /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECC4142D14C0CB0096FA7F /* FilmViewController.swift */; };
+		14FD53302D26DB24002C1DFA /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FD532F2D26DB24002C1DFA /* Film.swift */; };
+		14FD53322D26DF79002C1DFA /* FilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FD53312D26DF79002C1DFA /* FilmView.swift */; };
+		14FD53372D270161002C1DFA /* ButtonSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FD53362D270161002C1DFA /* ButtonSelectionView.swift */; };
+		14FD53392D270B37002C1DFA /* README in Resources */ = {isa = PBXBuildFile; fileRef = 14FD53382D270B37002C1DFA /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		147E45082D14805500B84C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		147E450B2D14805500B84C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		147E450D2D14805500B84C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147E45132D14808000B84C4F /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		147E45152D14808E00B84C4F /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		147E45172D1482BD00B84C4F /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		14ECC4142D14C0CB0096FA7F /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
+		14FD532F2D26DB24002C1DFA /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		14FD53312D26DF79002C1DFA /* FilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmView.swift; sourceTree = "<group>"; };
+		14FD53362D270161002C1DFA /* ButtonSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSelectionView.swift; sourceTree = "<group>"; };
+		14FD53382D270B37002C1DFA /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +56,7 @@
 		147E44F32D14805400B84C4F = {
 			isa = PBXGroup;
 			children = (
+				14FD53382D270B37002C1DFA /* README */,
 				147E44FE2D14805400B84C4F /* takeHomeMarc */,
 				147E44FD2D14805400B84C4F /* Products */,
 			);
@@ -56,15 +73,46 @@
 		147E44FE2D14805400B84C4F /* takeHomeMarc */ = {
 			isa = PBXGroup;
 			children = (
+				14FD53352D26F84E002C1DFA /* Controller */,
+				14FD53342D26F848002C1DFA /* View */,
+				14FD53332D26F83F002C1DFA /* Model */,
 				147E44FF2D14805400B84C4F /* AppDelegate.swift */,
 				147E45012D14805400B84C4F /* SceneDelegate.swift */,
-				147E45032D14805400B84C4F /* ViewController.swift */,
 				147E45052D14805400B84C4F /* Main.storyboard */,
 				147E45082D14805500B84C4F /* Assets.xcassets */,
 				147E450A2D14805500B84C4F /* LaunchScreen.storyboard */,
 				147E450D2D14805500B84C4F /* Info.plist */,
 			);
 			path = takeHomeMarc;
+			sourceTree = "<group>";
+		};
+		14FD53332D26F83F002C1DFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				147E45132D14808000B84C4F /* Character.swift */,
+				147E45152D14808E00B84C4F /* Characters.swift */,
+				14FD532F2D26DB24002C1DFA /* Film.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14FD53342D26F848002C1DFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				147E45172D1482BD00B84C4F /* CharactersView.swift */,
+				14FD53312D26DF79002C1DFA /* FilmView.swift */,
+				14FD53362D270161002C1DFA /* ButtonSelectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14FD53352D26F84E002C1DFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14ECC4142D14C0CB0096FA7F /* FilmViewController.swift */,
+				147E45032D14805400B84C4F /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14FD53392D270B37002C1DFA /* README in Resources */,
 				147E450C2D14805500B84C4F /* LaunchScreen.storyboard in Resources */,
 				147E45092D14805500B84C4F /* Assets.xcassets in Resources */,
 				147E45072D14805400B84C4F /* Main.storyboard in Resources */,
@@ -140,7 +189,14 @@
 			files = (
 				147E45042D14805400B84C4F /* ViewController.swift in Sources */,
 				147E45002D14805400B84C4F /* AppDelegate.swift in Sources */,
+				147E45182D1482BD00B84C4F /* CharactersView.swift in Sources */,
 				147E45022D14805400B84C4F /* SceneDelegate.swift in Sources */,
+				147E45142D14808000B84C4F /* Character.swift in Sources */,
+				147E45162D14808E00B84C4F /* Characters.swift in Sources */,
+				14FD53302D26DB24002C1DFA /* Film.swift in Sources */,
+				14FD53322D26DF79002C1DFA /* FilmView.swift in Sources */,
+				14FD53372D270161002C1DFA /* ButtonSelectionView.swift in Sources */,
+				14ECC4152D14C0CB0096FA7F /* FilmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,13 @@
+This Readme records components utilized and the general architecture of this application.
+
+Description:
+    -   The takeHomeMarc project retrieves JSON formatted data to display star wars character and film content. This project is minimally enhanced graphically so visual design was not too heavily taken into account.
+    -   The API calls made rely on the standard `URLSession` singleton to process datatasks with the given URL. In most cases that is contained within the static property `.urlString`.
+    -   In order to avoid layout errors from the compiler, changes were made on an asynchronous through helper functions like `update`. Changes to the data that required interface changes were then propogated on the main thread after the changing of datasources.
+    -   Orientation and device independent constraints were desired, so in most cases the constraint translation from the autoresizing mask was not utilized.
+    -   This project features a few protocols for delegation, namely `CharacterDelegate` and `ButtonSelectionDelegate`.
+    -   As this project was developed programmatically, the storyboard and interface tools were not utilized. Due to the simple nature of the initial view, a standard `UITableView` was put into effect and it's built in features were leveraged.
+    -   During this project, much familiarity was gained in methods of data propogation, asynchronous view updating, and dynamic properties.
+    -   Unit tests were not used in this project. Applicable cases would be API link validation, response validation, JSON formatting validation, and layout responsiveness. In more robust applications, each unit or component should be tested for expected and edge cases.
+    -   Localization and certain accessibility preferences were not taken into account during development as well. In more robust applications, text resizing and verifying for VoiceOver quality is necessary.
+    -   Models used were simple, for decoding JSON responses related to characters and films.
