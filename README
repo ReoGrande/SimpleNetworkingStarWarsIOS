@@ -1,7 +1,7 @@
 This Readme records components utilized and the general architecture of this application.
 
 Description:
-    -   The takeHomeMarc project retrieves JSON formatted data to display star wars character and film content. This project is minimally enhanced graphically so visual design was not too heavily taken into account.
+    -   This project retrieves JSON formatted data to display star wars character and film content. This project is minimally enhanced graphically so visual design was not too heavily taken into account.
     -   The API calls made rely on the standard `URLSession` singleton to process datatasks with the given URL. In most cases that is contained within the static property `.urlString`.
     -   In order to avoid layout errors from the compiler, changes were made on an asynchronous through helper functions like `update`. Changes to the data that required interface changes were then propogated on the main thread after the changing of datasources.
     -   Orientation and device independent constraints were desired, so in most cases the constraint translation from the autoresizing mask was not utilized.
